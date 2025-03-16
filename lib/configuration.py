@@ -54,34 +54,34 @@ def get_local_configuration(environment: str) -> dict:
     """
     local_mapping = {
         DEPLOYMENT: {
-            ACCOUNT_ID: '',
-            REGION: 'us-east-2',
-            GITHUB_REPOSITORY_OWNER_NAME: '',
+            ACCOUNT_ID: '767397989858',
+            REGION: 'us-west-2',
+            GITHUB_REPOSITORY_OWNER_NAME: 'kkingkill',
             # If you use GitHub / GitHub Enterprise, this will be the organization name
-            GITHUB_REPOSITORY_NAME: '',
+            GITHUB_REPOSITORY_NAME: 'aws-cdk-pipelines-datalake-infrastructure',
             # Use your forked repo here!
             # This is used in the Logical Id of CloudFormation resources
             # We recommend capital case for consistency. e.g. DataLakeCdkBlog
-            LOGICAL_ID_PREFIX: '',
+            LOGICAL_ID_PREFIX: 'DataLakeCDKBlog',
             # This is used in resources that must be globally unique!
             # It may only contain alphanumeric characters, hyphens, and cannot contain trailing hyphens
             # E.g. unique-identifier-data-lake
-            RESOURCE_NAME_PREFIX: '',
+            RESOURCE_NAME_PREFIX: 'cdkblog-e2e',
         },
         DEV: {
-            ACCOUNT_ID: '',
-            REGION: 'us-east-2',
-            VPC_CIDR: '10.20.0.0/24'
-        },
-        TEST: {
-            ACCOUNT_ID: '',
-            REGION: 'us-east-2',
+            ACCOUNT_ID: '805895696474',
+            REGION: 'us-west-2',
             VPC_CIDR: '10.10.0.0/24'
         },
+        TEST: {
+            ACCOUNT_ID: '211125590948',
+            REGION: 'us-west-2',
+            VPC_CIDR: '10.20.0.0/24'
+        },
         PROD: {
-            ACCOUNT_ID: '',
-            REGION: 'us-east-2',
-            VPC_CIDR: '10.0.0.0/24'
+            ACCOUNT_ID: '471112788024',
+            REGION: 'us-west-2',
+            VPC_CIDR: '10.30.0.0/24'
         }
     }
 
